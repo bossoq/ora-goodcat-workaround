@@ -1,6 +1,6 @@
-# Simple Sveltekit Template
+# ORA Good Cat Known Issues & Workarounds
 
-Build a web app with Sveltekit, quickly.
+This repo contains ORA Good Cat known issues and workarounds.
 
 ## Setup
 
