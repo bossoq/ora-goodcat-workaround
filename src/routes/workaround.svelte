@@ -41,7 +41,12 @@
         {#each visibleWorkarounds as work}
           <tr class="border-b border-gray-50">
             <td class="py-3 px-1">{work.Title}</td>
-            <td class="py-3 px-1">{work.Symptom}</td>
+            <td class="py-3 px-1">
+              {#each work.Symptom.split('\n') as line}
+                - {line}
+                {@html '<br>'}
+              {/each}
+            </td>
             <td class="py-3 px-1">
               {#each work.Workaround.split('\n') as line}
                 - {line}
