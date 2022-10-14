@@ -77,6 +77,12 @@
       "Symptom": "มันคือ Mode2 EVSE นั่นเอง\nRated Current 13A\nIP54 (หัวชาร์จ IP55) IEC61851-1:2017\nอัตราการชาร์จไฟ AC สำหรับ Emergency/Granny charger รุ่นที่ GWM แถมพร้อมรถ\n500Ultra 1 ชั่วโมง = 20.4 km (4.08%) หรือ 1 นาที = 0.34 km (0.07%)\n400Pro/Tech 1 ชั่วโมง = 21.5 km (5.38%) หรือ 1 นาที = 0.36 km (0.09%)",
       "Workaround": "แค่ให้ความรู้เฉยๆ",
       "tags": ["emergency charger", "granny charger", "ที่ชาร์จหลังรถ", "portable charger"]
+    },
+    {
+      "Title": "Wall Charger",
+      "Symptom": "บางคันจะพบว่า ชาร์จไปซักพัก กำลังไฟจะลดลงครึ่งหนึ่ง (7.2kW => 3.6kW) แล้วก็กลับมาที่กำลังไฟเดิมอีกที",
+      "Workaround": "ยังไม่มีวิธีแก้\nตามสเปค น้องรับได้ 6.6kW\nWall Charger ที่แถมมาจ่ายไฟได้ 32A @220V (7.2kW)",
+      "tags": ["Home Charger", "GWM Home Charger", "ที่ชาร์จ AC"]
     }
   ]
 }
