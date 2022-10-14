@@ -17,8 +17,15 @@ const storeSettings = () => {
 
 export const darkTheme: Writable<boolean> = writable(storage.darkTheme ?? false)
 export const modalViewed: Writable<boolean> = writable(false)
+export const checklistStore: Writable<{ [k: string]: boolean }> = writable(
+  storage.checklistStore || {}
+)
 
 darkTheme.subscribe((value) => {
   storage.darkTheme = value
+  storeSettings()
+})
+checklistStore.subscribe((value) => {
+  storage.checklistStore = value
   storeSettings()
 })
