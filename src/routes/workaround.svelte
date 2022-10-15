@@ -35,7 +35,7 @@
         <div
           class="flex flex-row gap-6 sm:gap-8 text-gray-800 dark:text-gray-200 text-sm sm:text-lg pb-1"
         >
-          <p class="font-medium w-16 shrink-0">อาการ</p>
+          <p class="font-medium min-w-fit w-10 sm:w-16 shrink-0">อาการ</p>
           <ul class="list-disc">
             {#each work.Symptom.split('\n') as symptom}
               <li>{symptom}</li>
@@ -45,7 +45,7 @@
         <div
           class="flex flex-row gap-6 sm:gap-8 text-gray-800 dark:text-gray-200 text-sm sm:text-lg pb-1"
         >
-          <p class="font-medium w-16 shrink-0">วิธีแก้</p>
+          <p class="font-medium min-w-fit w-10 sm:w-16 shrink-0">วิธีแก้</p>
           <ul class="list-disc">
             {#each work.Workaround.split('\n') as workaroundLine}
               <li>{workaroundLine}</li>
