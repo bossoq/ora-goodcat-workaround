@@ -27,7 +27,11 @@
             bind:checked={$checklistStore[`h${hidx + 1}s${idx + 1}`]}
             class="mr-2 w-4 h-4"
           />
-          <label for={`h${hidx + 1}s${idx + 1}`} class="font-medium w-full">{subheader}</label>
+          <label
+            for={`h${hidx + 1}s${idx + 1}`}
+            class="font-medium w-full {$checklistStore[`h${hidx + 1}s${idx + 1}`] &&
+              'line-through'}">{subheader}</label
+          >
         </div>
       {/each}
     {/each}
