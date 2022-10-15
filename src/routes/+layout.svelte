@@ -8,11 +8,16 @@
   import Modal from '$lib/components/Modal.svelte'
   import { darkTheme, modalViewed } from '$lib/store'
   import Tipme from '$lib/components/Tipme.svelte'
+  import Topmenu from '$lib/components/Topmenu.svelte'
 
   const url = 'https://goodcat.bossoq.live'
   const title = 'Ora Good Cat Known Issues & Workarounds'
   const description = 'Ora Good Cat Known Issues & Workarounds gathering by Community'
 
+  const navItems = [
+    { name: 'Known Issues', url: '/' },
+    { name: 'Checklist', url: '/checklist' }
+  ]
   const menuItems = [
     { name: 'Made by bossoq', url: 'https://github.com/bossoq/ora-goodcat-workaround' }
   ]
@@ -27,6 +32,7 @@
 <main class={$darkTheme ? 'dark' : ''}>
   <Tipme name="bossoq" />
   <ThemeSelector {themeIcons} />
+  <Topmenu items={navItems} />
   <Menu items={menuItems} />
   {#if $modalViewed}
     <Modal />
