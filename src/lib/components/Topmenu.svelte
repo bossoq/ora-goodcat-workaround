@@ -8,10 +8,10 @@
 </script>
 
 <nav
-  class="flex flex-row text-xs sm:text-base text-right fixed top-2 right-0 p-2 z-10 text-emerald-800 dark:text-emerald-200"
+  class="flex flex-row text-xs sm:text-base text-right fixed top-0 sm:top-2 right-0 p-2 z-10 text-emerald-800 dark:text-emerald-200"
 >
   {#each items as { name, url }}
-    <a href={url} class="select-none mr-2" target="_self" rel="noreferrer">
+    <a href={url} class="select-none ml-2" target="_self" rel="noreferrer">
       <button
         class="rounded-lg p-2 text-black bg-teal-200 hover:bg-teal-300 dark:text-gray-800 dark:bg-teal-400 hover:dark:bg-teal-500 font-semibold {$page
           .url.pathname === url
