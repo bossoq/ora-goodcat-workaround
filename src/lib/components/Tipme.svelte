@@ -4,8 +4,8 @@
   const baseUrl = 'https://tipme.in.th/'
 </script>
 
-<div class="select-none absolute bottom-0 left-0 m-4 text-sm sm:text-base">
+<div class="flex flex-row text-sm sm:text-base font-medium fixed top-auto bottom-4 left-0 p-2 z-10">
   <a href={baseUrl + name} target="_blank">
-    <button class="rounded-2xl p-2 bg-red-600 text-white">{label}</button>
+    <button class="select-none rounded-2xl p-2 bg-red-600 text-white">{label}</button>
   </a>
 </div>

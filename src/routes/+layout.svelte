@@ -30,9 +30,9 @@
 <!-- <Kofi name="bossoq" label="Buy me Coffee" /> -->
 <!-- <Social {url} {title} /> -->
 <main class={$darkTheme ? 'dark' : ''}>
-  <Tipme name="bossoq" />
   <ThemeSelector {themeIcons} />
   <Topmenu items={navItems} />
+  <Tipme name="bossoq" />
   <Menu items={menuItems} />
   {#if $modalViewed}
     <Modal />
