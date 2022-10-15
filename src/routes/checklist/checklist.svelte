@@ -16,7 +16,7 @@
       on:click={() => ($checklistStore = {})}>Clear All</button
     >
   </div>
-  <div class="h-5/6 my-4 overflow-x-auto">
+  <div class="h-5/6 my-4 overflow-x-auto scrollbar-hide">
     {#each checklists as checklist, hidx}
       <p class="my-2 font-bold underline">{checklist.Header}</p>
       {#each checklist.Subheader as subheader, idx}
