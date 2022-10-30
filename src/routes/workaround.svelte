@@ -48,7 +48,10 @@
           <p class="font-medium min-w-fit w-10 sm:w-16 shrink-0">วิธีแก้</p>
           <ul class="list-disc">
             {#each work.Workaround.split('\n') as workaroundLine}
-              <li>{workaroundLine}</li>
+              <li>{@html workaroundLine.replace(/\[.+\]\(.+\)/, (match) => {
+                const [_, text, link] = match.split(/\[(.+)\]\((.+)\)/)
+                return `<a class="underline font-medium" href="${link}" target="_blank">${text}</a>`
+              })}</li>
             {/each}
           </ul>
         </div>
