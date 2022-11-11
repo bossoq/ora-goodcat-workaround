@@ -32,7 +32,7 @@
 <main class={$darkTheme ? 'dark' : ''}>
   <ThemeSelector {themeIcons} />
   <Topmenu items={navItems} />
-  <Tipme name="bossoq" />
+  <Tipme label='เอาออกเพราะหมาปปมันชอบเห่า' />
   <Menu items={menuItems} />
   {#if $modalViewed}
     <Modal />
