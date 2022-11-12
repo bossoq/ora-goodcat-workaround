@@ -7,7 +7,7 @@
   import ThemeSelector from '$lib/components/ThemeSelector.svelte'
   import Modal from '$lib/components/Modal.svelte'
   import { darkTheme, modalViewed } from '$lib/store'
-  import Tipme from '$lib/components/Tipme.svelte'
+  // import Tipme from '$lib/components/Tipme.svelte'
   import Topmenu from '$lib/components/Topmenu.svelte'
 
   const url = 'https://goodcat.bossoq.live'
@@ -32,7 +32,7 @@
 <main class={$darkTheme ? 'dark' : ''}>
   <ThemeSelector {themeIcons} />
   <Topmenu items={navItems} />
-  <Tipme label='เอาออกเพราะหมาปปมันชอบเห่า' />
+  <!-- <Tipme label='เอาออกเพราะหมาปปมันชอบเห่า' /> -->
   <Menu items={menuItems} />
   {#if $modalViewed}
     <Modal />
