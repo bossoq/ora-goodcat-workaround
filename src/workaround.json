@@ -3,7 +3,7 @@
     {
       "Title": "ตรวจเวอร์ชัน (Check Version)",
       "Symptom": "หน้าจอแมวจะไม่สามารถตรวจสอบเวอร์ชันกล่องต่างๆแบบปกติได้ ต้องใช้ท่าพิเศษตามนี้",
-      "Workaround": "1. ไปที่ Settings (การตั้งค่าระบบ)\n2. System (ระบบ)\n3. Version (หมายเลขเวอร์ชัน)\n4. System Update (อัปเดตระบบ) กดตรงนี้ประมาณ 8 ครั้ง\n5. จะมีเมนู Upgrade The Vehicle Via USB (อัปเกรดระบบรถผ่าน USB)\n6. เสียบ Thumb Drive (Fat32/NTFS) เข้าไปช่องไหนก็ได้\n7. กด USB Update (กำลังตรวจสอบการอัปเดต)",
+      "Workaround": "1. ไปที่ Settings (การตั้งค่าระบบ)\n2. System (ระบบ)\n3. Version (หมายเลขเวอร์ชัน)\n4. System Update (อัปเดตระบบ) กดตรงนี้ประมาณ 8 ครั้ง\n5. จะมีเมนู Upgrade The Vehicle Via USB (อัปเกรดระบบรถผ่าน USB)\n6. เสียบ Thumb Drive (Fat32/NTFS) เข้าไปช่องไหนก็ได้\n7. กด USB Update (กำลังตรวจสอบการอัปเดต)\nจะได้ไฟล์มาในโฟลเดอร์ fota ชื่อ {VIN ของรถ}_update_by_usb.json ที่มีข้อมูลเวอร์ชันของกล่องควบคุมต่างๆ อยู่",
       "tags": ["Version", "เวอร์ชัน", "ECU", "กล่อง"]
     },
     {
