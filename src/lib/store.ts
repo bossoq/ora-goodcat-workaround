@@ -20,6 +20,10 @@ export const modalViewed: Writable<boolean> = writable(false)
 export const checklistStore: Writable<{ [k: string]: boolean }> = writable(
   storage.checklistStore || {}
 )
+export const activeCard: Writable<string> = writable('usb')
+activeCard.subscribe((value) => {
+  console.log(value)
+})
 
 darkTheme.subscribe((value) => {
   storage.darkTheme = value

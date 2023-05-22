@@ -16,7 +16,8 @@
 
   const navItems = [
     { name: 'Known Issues', url: '/' },
-    { name: 'Checklist', url: '/checklist' }
+    { name: 'Checklist', url: '/checklist' },
+    { name: 'Check FW', url: '/checkfw' }
   ]
   const menuItems = [
     { name: 'Made by bossoq', url: 'https://github.com/bossoq/ora-goodcat-workaround' }
